@@ -1,9 +1,15 @@
 // Import MySQL connection.
 var connection = require("./connection.js");
 
+function printQuestionMarks(num) {
+    var arr = [];
 
+    for (var i = 0; i < num; i++) {
+        arr.push("?");
+    }
 
-
+    return arr.toString();
+}
 
 // Object for all our SQL statement functions.
 var orm = {
@@ -15,10 +21,18 @@ var orm = {
             }
             cb(result);
         });
+    },
+    update: function(tableInput, condition, cb) {
+        var queryString = "UPDATE " + tableInput + " SET devoured=true WHERE id=" + condition + ";";
+        connection.query(queryString, function(err, result) {
+            if (err) {
+                throw err;
+            }
+            cb(result);
+        });
+
     }
-
-
-};
+}
 
 
 

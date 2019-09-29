@@ -8,7 +8,9 @@ var burger = {
             cb(res);
         });
     },
-    // The variables cols and vals are arrays.
+    update: function(id, cb) {
+        orm.update("burgers", id, cb);
+    }
 
 };
 
