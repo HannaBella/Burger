@@ -20,6 +20,13 @@ router.put("/burgers/update", function(req, res) {
     });
 
 });
+router.post("/burgers/create", function(req, res) {
+    burger.create(req.body.burger_name, function(result) {
+
+        res.redirect("/");
+    });
+
+});
 
 // Export routes for server.js to use.
 module.exports = router;

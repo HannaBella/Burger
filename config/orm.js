@@ -31,6 +31,16 @@ var orm = {
             cb(result);
         });
 
+    },
+    create: function(tableInput, val, cb) {
+        var queryString = "INSERT INTO " + tableInput + " (burger_name) VALUES ('" + val + "');";
+        connection.query(queryString, function(err, result) {
+            if (err) {
+                throw err;
+            }
+            cb(result);
+        });
+
     }
 }
 
