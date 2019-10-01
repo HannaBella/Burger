@@ -18,7 +18,7 @@
 
 ### Friend Finder APP Demo
 
-<img src="">
+<img src="https://github.com/HannaBella/Burger/blob/master/public/assets/img/EatDaBurger.png">
 
 
 ## Contributor Hanna Tefera
