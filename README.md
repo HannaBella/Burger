@@ -16,7 +16,7 @@
 * bodyParser and method-override npm package
 * Heroku - to deploy the website
 
-### Friend Finder APP Demo
+### Eat Da Burger APP Demo
 
 <img src="https://github.com/HannaBella/Burger/blob/master/public/assets/img/EatDaBurger.png">
 
