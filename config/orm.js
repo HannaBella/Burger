@@ -3,11 +3,9 @@ var connection = require("./connection.js");
 
 function printQuestionMarks(num) {
     var arr = [];
-
     for (var i = 0; i < num; i++) {
         arr.push("?");
     }
-
     return arr.toString();
 }
 
@@ -30,7 +28,6 @@ var orm = {
             }
             cb(result);
         });
-
     },
     create: function(tableInput, val, cb) {
         var queryString = "INSERT INTO " + tableInput + " (burger_name) VALUES ('" + val + "');";
@@ -40,11 +37,8 @@ var orm = {
             }
             cb(result);
         });
-
     }
 }
-
-
 
 // Export the orm object for the model (burger.js).
 module.exports = orm;

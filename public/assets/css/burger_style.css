@@ -1,3 +1,7 @@
 body {
     background-color: rgb(205, 195, 50);
 }
+
+h1 {
+    color: rgba(255, 0, 0, 0.637);
+}
