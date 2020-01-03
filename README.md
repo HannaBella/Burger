@@ -10,7 +10,7 @@
 * MVC design pattern
 * HTML, CSS and BootStrap - front end
 * MySql and ORM - database
-* node.js 
+* Node.js - web server
 * Express - to handle routing
 * Handlebars - to generate HTML
 * bodyParser and method-override npm package
